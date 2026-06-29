@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaqueline Figueróa | Analista Programador</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#07111f;--panel:#0f1b2e;--panel2:#13233b;--text:#edf4ff;--muted:#9fb2cc;
+      --brand:#62d6ff;--brand2:#8b5cf6;--line:rgba(255,255,255,.12);--ok:#34d399;--warn:#fbbf24;
+    }
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
+    body{font-family:Segoe UI,system-ui,-apple-system,sans-serif;background:radial-gradient(circle at top left,#12304d 0,#07111f 42%,#050914 100%);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:5;backdrop-filter:blur(16px);background:rgba(7,17,31,.78);border-bottom:1px solid var(--line)}
+    .nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 0}.logo{font-weight:800;letter-spacing:.3px}.logo span{color:var(--brand)}
+    .links{display:flex;gap:18px;color:var(--muted);font-size:14px}.links a:hover{color:var(--brand)}
+    .hero{padding:70px 0 38px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center}.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.05);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:14px;margin-bottom:18px}
+    h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin-bottom:16px}.gradient{background:linear-gradient(90deg,var(--brand),#c4b5fd);-webkit-background-clip:text;color:transparent}.lead{color:#c8d7ea;font-size:18px;max-width:720px}
+   
+    .cta{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 22px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.btn.whatsapp{
+    background:#16a34a;
+    color:white;
+}
+
+.btn.linkedin{
+    background:#0a66c2;
+    color:white;
+}
+    .btn{border:1px solid var(--line);padding:12px 16px;border-radius:14px;background:rgba(255,255,255,.05);font-weight:700}.btn.primary{border:0;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#061120}.btn:hover{transform:translateY(-1px)}
+    .profile-card{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.28)}.profile-card img{width:170px;height:170px;object-fit:cover;border-radius:50%;border:4px solid rgba(98,214,255,.35);display:block;margin:0 auto 18px}.info-list{display:grid;gap:12px;margin-top:18px;color:var(--muted)}.info-list div{display:flex;gap:10px;align-items:flex-start}.info-list i{color:var(--brand);font-size:20px}
+    section{padding:42px 0}.section-title{font-size:28px;margin-bottom:18px}.grid{display:grid;gap:18px}.cols-3{grid-template-columns:repeat(3,1fr)}.cols-2{grid-template-columns:repeat(2,1fr)}.card{background:rgba(15,27,46,.82);border:1px solid var(--line);border-radius:22px;padding:22px}.card h3{margin-bottom:8px}.muted{color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.chip{padding:8px 11px;border-radius:999px;background:rgba(98,214,255,.09);border:1px solid rgba(98,214,255,.18);color:#d9f5ff;font-size:14px}.timeline{position:relative;display:grid;gap:18px}.job{border-left:3px solid var(--brand);padding-left:18px}.job .date{color:var(--brand);font-weight:700;font-size:13px}.job ul{margin:10px 0 0 18px;color:#c9d7e8}.highlight{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.metric{text-align:center}.metric strong{font-size:28px;color:var(--brand);display:block}.projects li{margin-left:18px;margin-bottom:8px;color:#c9d7e8}.footer{padding:28px 0 40px;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
+    @media(max-width:850px){.hero-grid,.cols-2,.cols-3,.highlight{grid-template-columns:1fr}.links{display:none}.hero{padding-top:42px}.profile-card img{width:145px;height:145px}}
+    .profile-photo{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #2563eb;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="wrap"><div class="logo">Jaqueline <span>Figueróa</span></div><div class="links"><a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div></div></nav>
+
+  <header class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="badge"><i class="ri-code-s-slash-line"></i> Analista Programador · Ingeniería en Sistemas</div>
+        <h1>Desarrollo soluciones web para <span class="gradient">procesos reales de negocio</span>.</h1>
+        <p class="lead">Estudiante de último año de Ingeniería en Sistemas y analista programador con experiencia en plataformas empresariales, banca, cobranza, bases de datos, reportes, automatización y mantenimiento de sistemas legacy.</p>
+        <div class="cta">
+    
+            <a class="btn primary"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=jaquifigue23@gmail.com&su=Inter%C3%A9s%20en%20tu%20perfil%20profesional&body=Hola%20Jaqueline,%0A%0AHe%20visitado%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte%20para%20conversar%20sobre%20una%20oportunidad.%0A%0ASaludos."
+                target="_blank">
+                    <i class="ri-mail-send-line"></i> Correo
+            </a>
+
+            <a class="btn whatsapp"
+                href="https://wa.me/50240420186?text=Hola%20Jaqueline,%20he%20visitado%20tu%20portafolio%20profesional%20y%20me%20ha%20interesado%20tu%20perfil.%20Me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20una%20oportunidad%20o%20proyecto."
+                target="_blank">
+                    <i class="ri-whatsapp-line"></i> WhatsApp
+            </a>
+
+            <a class="btn linkedin"
+            href="https://www.linkedin.com/in/jaqueline-figueroa-5b2aa5280"
+            target="_blank">
+                <i class="ri-linkedin-box-fill"></i> LinkedIn
+            </a>
+<a class="btn" href="#experiencia"><i class="ri-briefcase-line"></i> Ver experiencia</a>
+        </div>
+        
+      </div>
+      <aside class="profile-card" id="contacto">
+        <div class="profile-container">
+            <img src="imagen_curriculum.jpeg" alt="Jaqueline Figueroa" class="profile-photo">
+        </div>
+        <h2 style="text-align:center">Jaqueline Figueróa</h2>
+        <p class="muted" style="text-align:center">Analista programador de plataforma</p>
+        <div class="info-list">
+          <div><i class="ri-map-pin-line"></i><span>Guatemala, Guatemala</span></div>
+          <div><i class="ri-phone-line"></i><span>(+502) 4042-0186</span></div>
+          <div><i class="ri-mail-line"></i><span>jaquifigue23@gmail.com</span></div>
+          <div><i class="ri-translate-2"></i><span>Español nativo · Inglés intermedio</span></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <section class="wrap" id="perfil">
+    <h2 class="section-title">Perfil profesional</h2>
+    <div class="card">
+      <p>Desarrolladora de software enfocada en mantenimiento, modernización y mejora continua de plataformas web internas. Tengo experiencia levantando requerimientos, analizando viabilidad técnica, proponiendo mejoras, creando formularios, validaciones, reportes PDF/Excel, consultas SQL y flujos que reducen errores y facilitan el trabajo de usuarios internos.</p>
+      <div class="highlight" style="margin-top:20px">
+        <div class="metric"><strong>3+</strong><span class="muted">años en tecnología y operación</span></div>
+        <div class="metric"><strong>SQL</strong><span class="muted">consultas, SP y reportes</span></div>
+        <div class="metric"><strong>Web</strong><span class="muted">ASP.NET, PHP, JS</span></div>
+        <div class="metric"><strong>Scrum</strong><span class="muted">sprints y mejora continua</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 class="section-title">Stack y herramientas</h2>
+    <div class="grid cols-3">
+      <div class="card"><h3><i class="ri-code-box-line"></i> Desarrollo</h3><div class="chips"><span class="chip">VB.NET</span><span class="chip">ASP.NET WebForms</span><span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span><span class="chip">jQuery</span><span class="chip">Bootstrap</span></div></div>
+      <div class="card"><h3><i class="ri-database-2-line"></i> Datos</h3><div class="chips"><span class="chip">SQL Server</span><span class="chip">Oracle / PL-SQL</span><span class="chip">Stored Procedures</span><span class="chip">Report Builder</span><span class="chip">PDF / Excel</span></div></div>
+      <div class="card"><h3><i class="ri-tools-line"></i> Sistemas</h3><div class="chips"><span class="chip">Visual Studio</span><span class="chip">Git / GitHub</span><span class="chip">TFS</span><span class="chip">SAP</span><span class="chip">AS400</span><span class="chip">Siebel</span></div></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="experiencia">
+    <h2 class="section-title">Experiencia</h2>
+    <div class="timeline card">
+      <div class="job"><span class="date">Enero 2026 — Actualidad</span><h3>Banco InterConsumo · Analista programador de plataforma</h3><p class="muted">Desarrollo, soporte y optimización de aplicaciones empresariales para procesos financieros, cobranza y atención al cliente.</p><ul><li>Mantenimiento de aplicaciones con ASP.NET WebForms, VB.NET y SQL Server.</li><li>Creación y optimización de procedimientos almacenados, consultas SQL y procesos de integración.</li><li>Análisis de incidencias en ambientes productivos y de pruebas.</li><li>Mejoras en formularios, validaciones, workflows, mailing, tracking y gestión de clientes.</li><li>Soporte a sistemas de call center, campañas predictivas y plataformas de cobranza.</li></ul></div>
+      <div class="job"><span class="date">Octubre 2023 — Enero 2026</span><h3>Universidad Francisco Marroquín · Analista programador junior</h3><p class="muted">Modernización de plataformas legacy PHP + Oracle, frontends con jQuery/Bootstrap y módulos administrativos/académicos.</p><ul><li>Levantamiento de requerimientos con usuarios internos y análisis de tiempos.</li><li>Formularios, validaciones UX, AJAX, filtros, paginación y exportes PDF/Excel.</li><li>Reportes financieros, pólizas, retenciones, pagos, parqueos, nómina y contratos.</li><li>Participación en migración de sistemas antiguos a sistemas nuevos.</li></ul></div>
+      <div class="job"><span class="date">2021 — 2023</span><h3>BAC Credomatic / Ministerio de Educación / Operaciones</h3><p class="muted">Experiencia operativa en pagos, documentación, cartera, proveedores, facturación, caja chica e inventarios, fortaleciendo visión de negocio y atención al cliente.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="proyectos">
+    <h2 class="section-title">Proyectos y fortalezas clave</h2>
+    <div class="grid cols-2">
+      <div class="card projects"><h3><i class="ri-lightbulb-flash-line"></i> Lo que puedo aportar</h3><ul><li>Convertir procesos manuales en herramientas digitales más ordenadas.</li><li>Detectar errores en consultas, validaciones y flujos de negocio.</li><li>Mejorar pantallas para que sean más fáciles de usar y mantener.</li><li>Construir reportes para seguimiento operativo y toma de decisiones.</li></ul></div>
+      <div class="card projects"><h3><i class="ri-rocket-line"></i> Enfoque profesional</h3><ul><li>Análisis estructurado de problemas técnicos.</li><li>Comunicación clara con usuarios de negocio.</li><li>Mejora continua después de cada entrega.</li><li>Responsabilidad, adaptación y aprendizaje constante.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 class="section-title">Educación</h2>
+    <div class="grid cols-2">
+      <div class="card"><h3>Universidad Mariano Gálvez de Guatemala</h3><p class="muted">Ingeniería en Sistemas · Décimo semestre</p><p>Énfasis académico en desarrollo tecnológico, programación y automatización.</p></div>
+      <div class="card"><h3>INTECAP</h3><p class="muted">Diplomado en etiqueta y protocolo</p><p>Formación complementaria para comunicación profesional, presentación y atención.</p></div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="wrap">© Jaqueline Figueróa · Currículum web </div></footer>
+</body>
+</html>
