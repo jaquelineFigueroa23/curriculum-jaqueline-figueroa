@@ -1,169 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaqueline Figueróa | Analista Programador</title>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio profesional de Jaqueline Figueroa, analista programadora de aplicaciones empresariales.">
+  <title>Jaqueline Figueroa | Analista programadora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <style>
-    :root{
-      --bg:#07111f;--panel:#0f1b2e;--panel2:#13233b;--text:#edf4ff;--muted:#9fb2cc;
-      --brand:#62d6ff;--brand2:#8b5cf6;--line:rgba(255,255,255,.12);--ok:#34d399;--warn:#fbbf24;
-    }
-    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
-    body{font-family:Segoe UI,system-ui,-apple-system,sans-serif;background:radial-gradient(circle at top left,#12304d 0,#07111f 42%,#050914 100%);color:var(--text);line-height:1.6}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:5;backdrop-filter:blur(16px);background:rgba(7,17,31,.78);border-bottom:1px solid var(--line)}
-    .nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 0}.logo{font-weight:800;letter-spacing:.3px}.logo span{color:var(--brand)}
-    .links{display:flex;gap:18px;color:var(--muted);font-size:14px}.links a:hover{color:var(--brand)}
-    .hero{padding:70px 0 38px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center}.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.05);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:14px;margin-bottom:18px}
-    h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin-bottom:16px}.gradient{background:linear-gradient(90deg,var(--brand),#c4b5fd);-webkit-background-clip:text;color:transparent}.lead{color:#c8d7ea;font-size:18px;max-width:720px}
-   
-    .cta{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    margin-top:20px;
-}
-
-.btn{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    padding:12px 22px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s ease;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.btn.primary{
-    background:#2563eb;
-    color:white;
-}
-
-.btn.whatsapp{
-    background:#16a34a;
-    color:white;
-}
-
-.btn.linkedin{
-    background:#0a66c2;
-    color:white;
-}
-    .btn{border:1px solid var(--line);padding:12px 16px;border-radius:14px;background:rgba(255,255,255,.05);font-weight:700}.btn.primary{border:0;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#061120}.btn:hover{transform:translateY(-1px)}
-    .profile-card{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.28)}.profile-card img{width:170px;height:170px;object-fit:cover;border-radius:50%;border:4px solid rgba(98,214,255,.35);display:block;margin:0 auto 18px}.info-list{display:grid;gap:12px;margin-top:18px;color:var(--muted)}.info-list div{display:flex;gap:10px;align-items:flex-start}.info-list i{color:var(--brand);font-size:20px}
-    section{padding:42px 0}.section-title{font-size:28px;margin-bottom:18px}.grid{display:grid;gap:18px}.cols-3{grid-template-columns:repeat(3,1fr)}.cols-2{grid-template-columns:repeat(2,1fr)}.card{background:rgba(15,27,46,.82);border:1px solid var(--line);border-radius:22px;padding:22px}.card h3{margin-bottom:8px}.muted{color:var(--muted)}
-    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.chip{padding:8px 11px;border-radius:999px;background:rgba(98,214,255,.09);border:1px solid rgba(98,214,255,.18);color:#d9f5ff;font-size:14px}.timeline{position:relative;display:grid;gap:18px}.job{border-left:3px solid var(--brand);padding-left:18px}.job .date{color:var(--brand);font-weight:700;font-size:13px}.job ul{margin:10px 0 0 18px;color:#c9d7e8}.highlight{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.metric{text-align:center}.metric strong{font-size:28px;color:var(--brand);display:block}.projects li{margin-left:18px;margin-bottom:8px;color:#c9d7e8}.footer{padding:28px 0 40px;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
-    @media(max-width:850px){.hero-grid,.cols-2,.cols-3,.highlight{grid-template-columns:1fr}.links{display:none}.hero{padding-top:42px}.profile-card img{width:145px;height:145px}}
-    .profile-photo{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #2563eb;
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
-}
+    :root{--bg:#050914;--panel:#0d1728;--text:#f4f8ff;--muted:#9fb0c9;--cyan:#5ce1e6;--blue:#7896ff;--violet:#a777ff;--line:rgba(255,255,255,.11);--shadow:0 25px 80px rgba(0,0,0,.35)}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,92%);margin:auto}.orb{position:fixed;border-radius:50%;filter:blur(90px);opacity:.14;pointer-events:none;z-index:-1}.orb.one{width:430px;height:430px;background:var(--cyan);top:-150px;left:-140px}.orb.two{width:500px;height:500px;background:var(--violet);right:-220px;top:35%}.glow{position:fixed;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(92,225,230,.08),transparent 66%);transform:translate(-50%,-50%);pointer-events:none;z-index:-1}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(5,9,20,.77);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-in{display:flex;align-items:center;justify-content:space-between;min-height:70px}.logo{font:700 20px "Space Grotesk"}.logo span,.company,.kicker{color:var(--cyan)}.links{display:flex;gap:23px;color:var(--muted);font-size:13px;font-weight:700}.links a:hover{color:var(--cyan)}.status,.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:rgba(255,255,255,.04);font-size:12px;font-weight:700}.dot{width:8px;height:8px;border-radius:50%;background:#42e6a4;box-shadow:0 0 14px #42e6a4}
+    .hero{min-height:88vh;display:grid;align-items:center;padding:70px 0}.hero-grid{display:grid;grid-template-columns:1.17fr .83fr;gap:55px;align-items:center}.hero h1{font:700 clamp(44px,6.5vw,78px)/1.02 "Space Grotesk";letter-spacing:-2.5px;margin:21px 0}.gradient{background:linear-gradient(100deg,var(--cyan),#b2c0ff 50%,#d1a9ff);-webkit-background-clip:text;color:transparent}.lead{color:#c6d3e6;font-size:18px;max-width:760px}.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.045);font-weight:800;font-size:13px;transition:.25s}.btn:hover{transform:translateY(-3px);border-color:var(--cyan)}.btn.primary{color:#061016;background:linear-gradient(135deg,var(--cyan),#94aaff);border:0}.profile,.card{background:linear-gradient(145deg,rgba(17,29,49,.96),rgba(8,15,28,.94));border:1px solid var(--line);box-shadow:0 12px 45px rgba(0,0,0,.15)}.profile{position:relative;padding:26px;border-radius:29px;box-shadow:var(--shadow);overflow:hidden}.profile:before{content:"";position:absolute;width:180px;height:180px;background:var(--violet);filter:blur(75px);opacity:.22;right:-75px;top:-75px}.profile img{width:170px;height:170px;border-radius:27px;object-fit:cover;object-position:center top;border:1px solid rgba(255,255,255,.22);display:block;margin-bottom:18px}.profile h2{font:700 27px "Space Grotesk"}.role{color:var(--cyan);font-weight:700;margin:3px 0 15px}.contacts{display:grid;gap:9px;color:var(--muted);font-size:13px}.contacts span{display:flex;align-items:center;gap:9px}.contacts i{color:var(--cyan);font-size:18px}
+    section{padding:62px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:27px}.kicker{font-size:11px;letter-spacing:2.3px;text-transform:uppercase;font-weight:800}.title{font:700 clamp(30px,4vw,46px)/1.15 "Space Grotesk";letter-spacing:-1.2px;margin-top:5px}.head>p{max-width:570px;color:var(--muted)}.card{border-radius:21px;padding:23px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.metric{text-align:center}.metric strong{display:block;font:700 30px "Space Grotesk";color:var(--cyan)}.metric span{font-size:12px;color:var(--muted)}.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.skill h3{display:flex;gap:8px;align-items:center;margin-bottom:14px}.skill h3 i{color:var(--cyan)}.chips{display:flex;flex-wrap:wrap;gap:7px}.chip{font-size:11px;font-weight:700;padding:7px 9px;border-radius:999px;color:#dfebfb;background:rgba(96,133,255,.09);border:1px solid rgba(96,133,255,.2)}
+    .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.filter{cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 13px;font-weight:700;font-size:12px}.filter.active,.filter:hover{color:#071018;background:var(--cyan);border-color:var(--cyan)}.timeline{position:relative;display:grid;gap:16px}.timeline:before{content:"";position:absolute;left:19px;top:25px;bottom:25px;width:1px;background:linear-gradient(var(--cyan),var(--violet),transparent)}.job{position:relative;margin-left:42px;transition:.3s}.job.hidden{display:none}.job:before{content:"";position:absolute;left:-31px;top:28px;width:11px;height:11px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 6px rgba(92,225,230,.1)}.job.featured{border-color:rgba(92,225,230,.32);background:linear-gradient(145deg,rgba(18,43,59,.96),rgba(10,19,35,.95))}.job-top{display:flex;justify-content:space-between;gap:18px;align-items:start}.job h3{font:700 21px "Space Grotesk"}.company{font-size:13px;font-weight:800}.date{white-space:nowrap;color:var(--muted);font-size:11px;border:1px solid var(--line);border-radius:999px;padding:5px 9px}.job p{color:var(--muted);margin-top:9px}.job ul{columns:2;column-gap:32px;margin:13px 0 0 18px}.job li{break-inside:avoid;margin-bottom:6px;color:#cbd7e7;font-size:13px}.tech-line{margin-top:15px;padding-top:13px;border-top:1px solid var(--line);color:#dce9f7;font-size:12px}.tech-line strong{color:var(--cyan)}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.project{transition:.28s}.project:hover{transform:translateY(-5px);border-color:rgba(92,225,230,.34)}.icon{display:grid;place-items:center;width:41px;height:41px;border-radius:12px;background:rgba(92,225,230,.1);color:var(--cyan);font-size:20px;margin-bottom:14px}.project h3{font:700 19px "Space Grotesk";margin-bottom:6px}.project p,.education p,.item p{color:var(--muted);font-size:13px}.project .chips{margin-top:14px}.two{display:grid;grid-template-columns:1fr 1fr;gap:15px}.education,.list{display:grid;gap:14px}.education h3,.item h3{font-size:15px}.item{display:flex;gap:12px}.item i{color:var(--cyan);font-size:20px;margin-top:2px}.footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:12px}.footer .wrap{display:flex;justify-content:space-between;gap:20px}.reveal{opacity:0;transform:translateY(23px);transition:opacity .65s,transform .65s}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:900px){.hero-grid,.skills{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.links{display:none}.job ul{columns:1}.head{align-items:start;flex-direction:column}.projects,.two{grid-template-columns:1fr}}@media(max-width:560px){.hero h1{letter-spacing:-1.4px}.status{display:none}.profile img{width:135px;height:135px}.job-top{flex-direction:column}.job{margin-left:34px}.timeline:before{left:12px}.job:before{left:-27px}.footer .wrap{flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.glow{display:none}}
   </style>
 </head>
-<body>
-  <nav class="nav"><div class="wrap"><div class="logo">Jaqueline <span>Figueróa</span></div><div class="links"><a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div></div></nav>
-
-  <header class="hero wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="badge"><i class="ri-code-s-slash-line"></i> Analista Programador · Ingeniería en Sistemas</div>
-        <h1>Desarrollo soluciones web para <span class="gradient">procesos reales de negocio</span>.</h1>
-        <p class="lead">Estudiante de último año de Ingeniería en Sistemas y analista programador con experiencia en plataformas empresariales, banca, cobranza, bases de datos, reportes, automatización y mantenimiento de sistemas legacy.</p>
-        <div class="cta">
-    
-            <a class="btn primary"
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=jaquifigue23@gmail.com&su=Inter%C3%A9s%20en%20tu%20perfil%20profesional&body=Hola%20Jaqueline,%0A%0AHe%20visitado%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte%20para%20conversar%20sobre%20una%20oportunidad.%0A%0ASaludos."
-                target="_blank">
-                    <i class="ri-mail-send-line"></i> Correo
-            </a>
-
-            <a class="btn whatsapp"
-                href="https://wa.me/50240420186?text=Hola%20Jaqueline,%20he%20visitado%20tu%20portafolio%20profesional%20y%20me%20ha%20interesado%20tu%20perfil.%20Me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20una%20oportunidad%20o%20proyecto."
-                target="_blank">
-                    <i class="ri-whatsapp-line"></i> WhatsApp
-            </a>
-
-            <a class="btn linkedin"
-            href="https://www.linkedin.com/in/jaqueline-figueroa-5b2aa5280"
-            target="_blank">
-                <i class="ri-linkedin-box-fill"></i> LinkedIn
-            </a>
-<a class="btn" href="#experiencia"><i class="ri-briefcase-line"></i> Ver experiencia</a>
-        </div>
-        
-      </div>
-      <aside class="profile-card" id="contacto">
-        <div class="profile-container">
-            <img src="imagen_curriculum.jpeg" alt="Jaqueline Figueroa" class="profile-photo">
-        </div>
-        <h2 style="text-align:center">Jaqueline Figueróa</h2>
-        <p class="muted" style="text-align:center">Analista programador de plataforma</p>
-        <div class="info-list">
-          <div><i class="ri-map-pin-line"></i><span>Guatemala, Guatemala</span></div>
-          <div><i class="ri-phone-line"></i><span>(+502) 4042-0186</span></div>
-          <div><i class="ri-mail-line"></i><span>jaquifigue23@gmail.com</span></div>
-          <div><i class="ri-translate-2"></i><span>Español nativo · Inglés intermedio</span></div>
-        </div>
-      </aside>
-    </div>
-  </header>
-
-  <section class="wrap" id="perfil">
-    <h2 class="section-title">Perfil profesional</h2>
-    <div class="card">
-      <p>Desarrolladora de software enfocada en mantenimiento, modernización y mejora continua de plataformas web internas. Tengo experiencia levantando requerimientos, analizando viabilidad técnica, proponiendo mejoras, creando formularios, validaciones, reportes PDF/Excel, consultas SQL y flujos que reducen errores y facilitan el trabajo de usuarios internos.</p>
-      <div class="highlight" style="margin-top:20px">
-        <div class="metric"><strong>3+</strong><span class="muted">años en tecnología y operación</span></div>
-        <div class="metric"><strong>SQL</strong><span class="muted">consultas, SP y reportes</span></div>
-        <div class="metric"><strong>Web</strong><span class="muted">ASP.NET, PHP, JS</span></div>
-        <div class="metric"><strong>Scrum</strong><span class="muted">sprints y mejora continua</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="wrap">
-    <h2 class="section-title">Stack y herramientas</h2>
-    <div class="grid cols-3">
-      <div class="card"><h3><i class="ri-code-box-line"></i> Desarrollo</h3><div class="chips"><span class="chip">VB.NET</span><span class="chip">ASP.NET WebForms</span><span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span><span class="chip">jQuery</span><span class="chip">Bootstrap</span></div></div>
-      <div class="card"><h3><i class="ri-database-2-line"></i> Datos</h3><div class="chips"><span class="chip">SQL Server</span><span class="chip">Oracle / PL-SQL</span><span class="chip">Stored Procedures</span><span class="chip">Report Builder</span><span class="chip">PDF / Excel</span></div></div>
-      <div class="card"><h3><i class="ri-tools-line"></i> Sistemas</h3><div class="chips"><span class="chip">Visual Studio</span><span class="chip">Git / GitHub</span><span class="chip">TFS</span><span class="chip">SAP</span><span class="chip">AS400</span><span class="chip">Siebel</span></div></div>
-    </div>
-  </section>
-
-  <section class="wrap" id="experiencia">
-    <h2 class="section-title">Experiencia</h2>
-    <div class="timeline card">
-      <div class="job"><span class="date">Enero 2026 — Actualidad</span><h3>Banco InterConsumo · Analista programador de plataforma</h3><p class="muted">Desarrollo, soporte y optimización de aplicaciones empresariales para procesos financieros, cobranza y atención al cliente.</p><ul><li>Mantenimiento de aplicaciones con ASP.NET WebForms, VB.NET y SQL Server.</li><li>Creación y optimización de procedimientos almacenados, consultas SQL y procesos de integración.</li><li>Análisis de incidencias en ambientes productivos y de pruebas.</li><li>Mejoras en formularios, validaciones, workflows, mailing, tracking y gestión de clientes.</li><li>Soporte a sistemas de call center, campañas predictivas y plataformas de cobranza.</li></ul></div>
-      <div class="job"><span class="date">Octubre 2023 — Enero 2026</span><h3>Universidad Francisco Marroquín · Analista programador junior</h3><p class="muted">Modernización de plataformas legacy PHP + Oracle, frontends con jQuery/Bootstrap y módulos administrativos/académicos.</p><ul><li>Levantamiento de requerimientos con usuarios internos y análisis de tiempos.</li><li>Formularios, validaciones UX, AJAX, filtros, paginación y exportes PDF/Excel.</li><li>Reportes financieros, pólizas, retenciones, pagos, parqueos, nómina y contratos.</li><li>Participación en migración de sistemas antiguos a sistemas nuevos.</li></ul></div>
-      <div class="job"><span class="date">2021 — 2023</span><h3>BAC Credomatic / Ministerio de Educación / Operaciones</h3><p class="muted">Experiencia operativa en pagos, documentación, cartera, proveedores, facturación, caja chica e inventarios, fortaleciendo visión de negocio y atención al cliente.</p></div>
-    </div>
-  </section>
-
-  <section class="wrap" id="proyectos">
-    <h2 class="section-title">Proyectos y fortalezas clave</h2>
-    <div class="grid cols-2">
-      <div class="card projects"><h3><i class="ri-lightbulb-flash-line"></i> Lo que puedo aportar</h3><ul><li>Convertir procesos manuales en herramientas digitales más ordenadas.</li><li>Detectar errores en consultas, validaciones y flujos de negocio.</li><li>Mejorar pantallas para que sean más fáciles de usar y mantener.</li><li>Construir reportes para seguimiento operativo y toma de decisiones.</li></ul></div>
-      <div class="card projects"><h3><i class="ri-rocket-line"></i> Enfoque profesional</h3><ul><li>Análisis estructurado de problemas técnicos.</li><li>Comunicación clara con usuarios de negocio.</li><li>Mejora continua después de cada entrega.</li><li>Responsabilidad, adaptación y aprendizaje constante.</li></ul></div>
-    </div>
-  </section>
-
-  <section class="wrap">
-    <h2 class="section-title">Educación</h2>
-    <div class="grid cols-2">
-      <div class="card"><h3>Universidad Mariano Gálvez de Guatemala</h3><p class="muted">Ingeniería en Sistemas · Décimo semestre</p><p>Énfasis académico en desarrollo tecnológico, programación y automatización.</p></div>
-      <div class="card"><h3>INTECAP</h3><p class="muted">Diplomado en etiqueta y protocolo</p><p>Formación complementaria para comunicación profesional, presentación y atención.</p></div>
-    </div>
-  </section>
-
-  <footer class="footer"><div class="wrap">© Jaqueline Figueróa · Currículum web </div></footer>
-</body>
-</html>
+<body><div class="orb one"></div><div class="orb two"></div><div class="glow" id="glow"></div>
+  <nav class="nav"><div class="wrap nav-in"><a class="logo" href="#inicio">JF<span>.</span></a><div class="links"><a href="#perfil">Perfil</a><a href="#habilidades">Habilidades</a><a href="#experiencia">Experiencia</a><a href="#proyectos">Proyectos</a><a href="#educacion">Educación</a></div><span class="status"><span class="dot"></span>Disponible para oportunidades</span></div></nav>
+  <header class="hero wrap" id="inicio"><div class="hero-grid"><div class="reveal"><span class="eyebrow"><i class="ri-code-s-slash-line"></i>Tecnología · Banca · Procesos de negocio</span><h1>Construyo soluciones que <span class="gradient">hacen avanzar el trabajo.</span></h1><p class="lead">Soy Jaqueline, analista programadora y estudiante de último año de Ingeniería en Sistemas. Desarrollo, mantengo y modernizo aplicaciones empresariales, traduzco necesidades de negocio en soluciones técnicas y acompaño cada entrega desde el requerimiento hasta el soporte en producción.</p><div class="cta"><a class="btn primary" href="mailto:jaquifigue23@gmail.com"><i class="ri-mail-send-line"></i>Contactarme</a><a class="btn" href="https://wa.me/50240420186" target="_blank" rel="noopener"><i class="ri-whatsapp-line"></i>WhatsApp</a><a class="btn" href="https://www.linkedin.com/in/jaqueline-figueroa-5b2aa5280" target="_blank" rel="noopener"><i class="ri-linkedin-box-fill"></i>LinkedIn</a><a class="btn" href="#experiencia"><i class="ri-arrow-down-line"></i>Ver trayectoria</a></div></div><aside class="profile reveal"><img src="imagen_curriculum.jpeg" alt="Jaqueline Figueroa"><h2>Jaqueline Figueroa</h2><div class="role">Analista programadora de plataforma</div><div class="contacts"><span><i class="ri-map-pin-line"></i>Guatemala, Guatemala</span><span><i class="ri-phone-line"></i>(+502) 4042-0186</span><span><i class="ri-mail-line"></i>jaquifigue23@gmail.com</span><span><i class="ri-translate-2"></i>Español nativo · Inglés intermedio</span></div></aside></div></header>
+  <main>
+    <section class="wrap reveal" id="perfil"><div class="head"><div><div class="kicker">Perfil profesional</div><h2 class="title">Tecnología con visión de negocio</h2></div><p>Mi experiencia combina desarrollo de software, operación bancaria, procesos administrativos y servicio al cliente. Comprendo tanto el código como a las personas y procesos que dependen de él.</p></div><div class="metrics"><div class="card metric"><strong data-count="7">0</strong><span>etapas laborales</span></div><div class="card metric"><strong data-count="3">0</strong><span>sectores de negocio</span></div><div class="card metric"><strong>2023</strong><span>desarrollo profesional desde</span></div><div class="card metric"><strong>360°</strong><span>análisis, desarrollo y soporte</span></div></div></section>
+    <section class="wrap reveal" id="habilidades"><div class="head"><div><div class="kicker">Conocimientos</div><h2 class="title">Stack y herramientas</h2></div><p>Tecnologías utilizadas para desarrollar, mantener, probar y dar soporte a soluciones internas de negocio.</p></div><div class="skills"><article class="card skill"><h3><i class="ri-code-box-line"></i>Desarrollo</h3><div class="chips"><span class="chip">.NET Framework</span><span class="chip">VB.NET</span><span class="chip">ASP.NET WebForms</span><span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">jQuery</span><span class="chip">AJAX</span><span class="chip">HTML5 / CSS3</span><span class="chip">Bootstrap</span><span class="chip">Responsive</span></div></article><article class="card skill"><h3><i class="ri-database-2-line"></i>Datos y reportes</h3><div class="chips"><span class="chip">SQL Server</span><span class="chip">T-SQL</span><span class="chip">Oracle / PL-SQL</span><span class="chip">OCI8</span><span class="chip">Stored Procedures</span><span class="chip">Consultas complejas</span><span class="chip">Report Builder</span><span class="chip">PDF / Excel</span><span class="chip">Cargas masivas</span></div></article><article class="card skill"><h3><i class="ri-tools-line"></i>Herramientas y prácticas</h3><div class="chips"><span class="chip">Visual Studio 2019</span><span class="chip">Git</span><span class="chip">Azure DevOps</span><span class="chip">Azure Repos · uso</span><span class="chip">Pipelines · seguimiento</span><span class="chip">WIQL</span><span class="chip">Genesys · campañas</span><span class="chip">TFS</span><span class="chip">Scrum</span><span class="chip">Casos de prueba</span><span class="chip">Pruebas funcionales</span><span class="chip">Regresión</span><span class="chip">Soporte a producción</span></div></article></div></section>
+    <section class="wrap" id="experiencia"><div class="head reveal"><div><div class="kicker">Trayectoria completa</div><h2 class="title">Experiencia laboral</h2></div><p>Una evolución desde atención, ventas y operación financiera hasta el análisis y desarrollo de plataformas empresariales.</p></div><div class="filters reveal"><button class="filter active" data-filter="all">Toda</button><button class="filter" data-filter="tech">Tecnología</button><button class="filter" data-filter="finance">Banca y administración</button><button class="filter" data-filter="service">Servicio y ventas</button></div><div class="timeline">
+      <article class="job card featured reveal" data-category="tech"><div class="job-top"><div><div class="company">Banco Interconsumo</div><h3>Analista programadora de plataforma</h3></div><span class="date">Enero 2026 — Actualidad</span></div><p>Desarrollo, mantenimiento y soporte de sistemas internos bancarios y administrativos, participando desde el análisis del requerimiento hasta las pruebas, implementación y soporte en producción.</p><ul><li>Análisis de requerimientos funcionales y técnicos para nuevos desarrollos, mejoras y mantenimientos.</li><li>Desarrollo de aplicaciones y componentes legados con ASP.NET WebForms, VB.NET y .NET Framework.</li><li>Análisis y depuración de lógica de negocio, formularios, controles, eventos y procesos internos.</li><li>Stored Procedures, consultas T-SQL, validaciones y actualizaciones de información en SQL Server.</li><li>Análisis entre bases de datos y módulos corporativos para detectar inconsistencias y validar flujos.</li><li>Mantenimiento y ampliación de campañas de predictivos de llamadas que utilizan procesos existentes de Genesys, incluyendo casos, estados y resultados.</li><li>Investigación de incidencias, análisis de causa raíz y ajustes en desarrollo y producción.</li><li>Validación contra requerimientos y preparación de funcionalidades para certificación.</li><li>Uso de Git y repositorios existentes en Azure DevOps: ramas, commits, merges, cherry-picks y resolución de conflictos.</li><li>Seguimiento de ejecuciones y resultados en pipelines ya configurados.</li><li>Gestión de User Stories, Tasks, Issues y requerimientos con trazabilidad en Azure DevOps.</li><li>Consultas WIQL para control y seguimiento de elementos de trabajo.</li><li>Pruebas funcionales y técnicas y acompañamiento durante implementaciones.</li><li>Documentación de desarrollos, cambios y resultados de pruebas.</li><li>Coordinación con usuarios, áreas funcionales y equipos técnicos.</li><li>Soporte a sistemas críticos con enfoque en seguridad, integridad, trazabilidad y continuidad.</li></ul><div class="tech-line"><strong>Tecnologías utilizadas:</strong> VB.NET · ASP.NET WebForms · .NET Framework · SQL Server · T-SQL · Stored Procedures · Visual Studio 2019 · Git · Azure DevOps · WIQL · Genesys · sistemas empresariales legados</div></article>
+      <article class="job card reveal" data-category="tech"><div class="job-top"><div><div class="company">Universidad Francisco Marroquín</div><h3>Analista programadora junior</h3></div><span class="date">Octubre 2023 — Enero 2026</span></div><p>Mantenimiento, modernización y evolución de plataformas legacy para procesos académicos, financieros y administrativos, trabajando directamente con clientes internos y usuarios de distintas áreas.</p><ul><li>Presentación de proyectos, cambios y nuevas funcionalidades a clientes internos.</li><li>Levantamiento de necesidades, análisis de viabilidad técnica y estimación de tiempos.</li><li>Mantenimiento de aplicaciones PHP conectadas a Oracle mediante OCI8.</li><li>Desarrollo de formularios, operaciones CRUD, validaciones y flujos de aprobación con AJAX.</li><li>Interfaces responsive con HTML5, CSS3, Bootstrap, JavaScript y jQuery.</li><li>Consultas Oracle y PL/SQL para información académica, financiera y administrativa.</li><li>Listados con búsquedas, filtros dinámicos, paginación y exportaciones PDF/Excel.</li><li>Módulo de Tesina: cronogramas, entregas, revisiones, correos y unificación de mensajes.</li><li>Reportes de estados financieros, pólizas, retenciones, cheques y transferencias internacionales.</li><li>Consultas y paneles de nómina, contratos, pagos, IGSS y control de personal.</li><li>Formularios para Odontología, Medicina y aspirantes con validación y carga masiva.</li><li>Módulos para parqueos CAME, ciclos, cursos especiales, pagos y catálogos geográficos.</li><li>Migración y reemplazo gradual de sistemas obsoletos sin interrumpir la operación.</li><li>Diseño de casos de prueba y ejecución de pruebas funcionales y de regresión.</li><li>Trabajo por sprints y mejoras posteriores al lanzamiento según comentarios de usuarios.</li></ul><div class="tech-line"><strong>Tecnologías utilizadas:</strong> PHP · Oracle · PL/SQL · OCI8 · JavaScript · jQuery · AJAX · Bootstrap · HTML5 · CSS3 · Git/GitHub · PDF/Excel · Scrum</div></article>
+      <article class="job card reveal" data-category="finance"><div class="job-top"><div><div class="company">Ministerio de Educación · DIREH</div><h3>Analista de nóminas</h3></div><span class="date">Enero 2023 — Septiembre 2023</span></div><p>Análisis y seguimiento de procesos relacionados con el pago a colaboradores del Ministerio de Educación, dentro de un entorno administrativo que requería precisión y manejo responsable de la información.</p><ul><li>Revisión de información utilizada en los procesos de pago de colaboradores.</li><li>Análisis y validación de datos para apoyar el procesamiento correcto de nóminas.</li><li>Seguimiento de casos y apoyo en la identificación de diferencias o inconsistencias.</li><li>Organización y control de información administrativa asociada a los pagos.</li><li>Cumplimiento de procedimientos y fechas establecidas para el procesamiento de nómina.</li><li>Coordinación y comunicación para dar seguimiento a consultas relacionadas con pagos.</li></ul></article>
+      <article class="job card reveal" data-category="finance"><div class="job-top"><div><div class="company">BAC Credomatic</div><h3>Créditos y cobros</h3></div><span class="date">Diciembre 2022 — Enero 2023</span></div><p>Gestión y recuperación de cartera de tarjetas de crédito, atendiendo clientes con distintos niveles de mora y trabajando con objetivos de recuperación definidos.</p><ul><li>Gestión de carteras con mora baja, media y alta.</li><li>Contacto telefónico con clientes para seguimiento de saldos pendientes.</li><li>Negociación y seguimiento de compromisos y alternativas de pago.</li><li>Registro de gestiones y actualización de resultados de contacto.</li><li>Orientación al cliente durante la gestión de cobro.</li><li>Trabajo enfocado en cumplimiento de metas de recuperación.</li></ul></article>
+      <article class="job card reveal" data-category="finance"><div class="job-top"><div><div class="company">BAC Credomatic</div><h3>Asistente administrativa de cobro legal</h3></div><span class="date">Junio 2021 — Diciembre 2022</span></div><p>Soporte administrativo para procesos de cobro legal y recuperación de cartera, asegurando el registro, revisión y seguimiento oportuno de pagos y documentación.</p><ul><li>Aplicación y control de pagos asociados a procesos de cobro.</li><li>Elaboración y seguimiento de la proyección de recuperación diaria.</li><li>Revisión y organización de documentación legal de expedientes.</li><li>Asignación y control de cartera para seguimiento de casos.</li><li>Gestión de pagos y gastos administrativos mediante SAP.</li><li>Procesamiento y seguimiento de facturas de proveedores.</li><li>Actualización de registros y apoyo a la trazabilidad de las gestiones.</li><li>Coordinación administrativa para mantener los casos y pagos al día.</li></ul><div class="tech-line"><strong>Sistemas utilizados:</strong> SAP · AS400 Banco · AS400 Tarjeta · Siebel · BBI · Microsoft Office</div></article>
+      <article class="job card reveal" data-category="service"><div class="job-top"><div><div class="company">Ultra Store</div><h3>Asesora de ventas y encargada de tienda</h3></div><span class="date">Junio 2018 — Mayo 2021</span></div><p>Crecimiento desde asesoría de ventas hasta la responsabilidad de la operación diaria de la tienda, combinando servicio al cliente, administración y control comercial.</p><ul><li>Atención y asesoría a clientes durante el proceso de compra.</li><li>Venta de productos y seguimiento de objetivos comerciales.</li><li>Control de proveedores y coordinación de abastecimiento.</li><li>Facturación y registro de las operaciones de venta.</li><li>Manejo, control y cierre de caja chica.</li><li>Control de existencias, entradas, salidas e inventarios.</li><li>Apoyo en el pago de planillas y controles administrativos.</li><li>Organización de la tienda y seguimiento de la operación cotidiana.</li></ul></article>
+      <article class="job card reveal" data-category="service"><div class="job-top"><div><div class="company">Estética Richard Guzmán</div><h3>Atención al cliente</h3></div><span class="date">Marzo 2017 — Mayo 2018</span></div><p>Atención directa a clientes y apoyo en las actividades comerciales y administrativas del establecimiento.</p><ul><li>Recepción, orientación y atención personalizada a clientes.</li><li>Venta y recomendación de productos de belleza.</li><li>Creación y promoción de ofertas para diferentes temporadas.</li><li>Facturación y registro de ventas realizadas.</li><li>Manejo y control de caja chica.</li><li>Control y seguimiento del inventario de productos.</li><li>Apoyo en el orden y funcionamiento diario del establecimiento.</li></ul></article>
+    </div></section>
+    <section class="wrap reveal" id="proyectos"><div class="head"><div><div class="kicker">Trabajo construido</div><h2 class="title">Proyectos y módulos</h2></div><p>Soluciones creadas para simplificar tareas, reducir errores, visualizar información y mantener operando procesos críticos.</p></div><div class="projects">
+      <article class="card project"><div class="icon"><i class="ri-bank-line"></i></div><h3>Plataformas bancarias y cobranza</h3><p>Mantenimiento de sistemas para gestión de clientes, workflows, mailing, tracking y campañas de telemercadeo. Ampliación de campañas que operan con procesos existentes de Genesys, soporte operativo y análisis de inconsistencias entre módulos.</p><div class="chips"><span class="chip">ASP.NET WebForms</span><span class="chip">VB.NET</span><span class="chip">SQL Server</span><span class="chip">Genesys · uso funcional</span></div></article>
+      <article class="card project"><div class="icon"><i class="ri-graduation-cap-line"></i></div><h3>Tesina y procesos académicos</h3><p>Formularios, cronogramas, entregas, revisiones, correos, operaciones CRUD y validaciones mejoradas continuamente.</p><div class="chips"><span class="chip">PHP</span><span class="chip">Oracle</span><span class="chip">AJAX</span></div></article>
+      <article class="card project"><div class="icon"><i class="ri-line-chart-line"></i></div><h3>Finanzas y contabilidad</h3><p>Estados financieros, pólizas, retenciones, transferencias internacionales y consultas para usuarios financieros.</p><div class="chips"><span class="chip">PL/SQL</span><span class="chip">Reportes</span><span class="chip">Excel</span></div></article>
+      <article class="card project"><div class="icon"><i class="ri-team-line"></i></div><h3>Nómina, contratos e IGSS</h3><p>Paneles y consultas para pagos, personal, registros y cartas de pago con seguimiento administrativo.</p><div class="chips"><span class="chip">Filtros</span><span class="chip">Paginación</span></div></article>
+      <article class="card project"><div class="icon"><i class="ri-file-list-3-line"></i></div><h3>Formularios clínicos y aspirantes</h3><p>Carga masiva, validación, consulta y exportación para Odontología, Medicina y procesos de aspirantes.</p><div class="chips"><span class="chip">Carga masiva</span><span class="chip">PDF / Excel</span></div></article>
+      <article class="card project"><div class="icon"><i class="ri-refresh-line"></i></div><h3>Modernización de sistemas legacy</h3><p>Nuevos módulos para sustituir aplicaciones obsoletas y mejorar velocidad, mantenibilidad, usabilidad y experiencia.</p><div class="chips"><span class="chip">Migración</span><span class="chip">Responsive</span><span class="chip">UX</span></div></article>
+      <article class="card project"><div class="icon"><i class="ri-parking-box-line"></i></div><h3>Parqueos CAME</h3><p>Vista de uso de parqueos con búsquedas, filtros y exportaciones para control operativo.</p><div class="chips"><span class="chip">Consultas</span><span class="chip">Exportes</span></div></article>
+      <article class="card project"><div class="icon"><i class="ri-map-2-line"></i></div><h3>Catálogos y geografía</h3><p>Pantallas y consultas geográficas utilizadas como catálogos centrales en diferentes procesos.</p><div class="chips"><span class="chip">Mantenimiento</span><span class="chip">Datos</span></div></article>
+    </div></section>
+    <section class="wrap reveal" id="educacion"><div class="head"><div><div class="kicker">Formación y forma de trabajar</div><h2 class="title">Preparación integral</h2></div></div><div class="two"><article class="card education"><div><h3>Ingeniería en Sistemas</h3><p>Universidad Mariano Gálvez · Décimo semestre · 2021 — Actualidad</p></div><div><h3>Bachillerato en Ciencias y Letras</h3><p>Liceo Clásico en Computación · 2020</p></div><div><h3>Diplomado en etiqueta y protocolo</h3><p>INTECAP</p></div></article><article class="card list"><div class="item"><i class="ri-search-eye-line"></i><div><h3>Análisis y resolución</h3><p>Investigo causas y propongo soluciones viables y mantenibles.</p></div></div><div class="item"><i class="ri-user-voice-line"></i><div><h3>Comunicación efectiva</h3><p>Traduzco necesidades entre usuarios, negocio y tecnología.</p></div></div><div class="item"><i class="ri-rocket-line"></i><div><h3>Iniciativa y mejora continua</h3><p>Busco reducir errores y facilitar el trabajo después de cada entrega.</p></div></div><div class="item"><i class="ri-team-line"></i><div><h3>Organización y servicio</h3><p>Planifico entregas, colaboro y mantengo el enfoque bajo presión.</p></div></div></article></div></section>
+  </main><footer class="footer"><div class="wrap"><span>© 2026 Jaqueline Figueroa · Currículum web</span><span>Diseñado y construido con atención al detalle.</span></div></footer>
+  <script>const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));const fs=document.querySelectorAll('.filter');fs.forEach(b=>b.addEventListener('click',()=>{fs.forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.job').forEach(j=>j.classList.toggle('hidden',b.dataset.filter!=='all'&&j.dataset.category!==b.dataset.filter))}));const counter=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;let n=0,end=+e.target.dataset.count,t=setInterval(()=>{e.target.textContent=++n+'+';if(n>=end)clearInterval(t)},170);counter.unobserve(e.target)}),{threshold:.6});document.querySelectorAll('[data-count]').forEach(e=>counter.observe(e));const g=document.getElementById('glow');document.addEventListener('pointermove',e=>{g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'});</script>
+</body></html>
